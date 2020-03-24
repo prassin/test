@@ -1,37 +1,33 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://poc.com/product.schema.json",
-  "title": "Product",
-  "description": "A product from Acme's catalog",
-  "type": "object",
-  "properties": {
-    "projectID": {
-      "description": "The unique identifier for a product",
-      "type": "integer"
+  "sensei:params": {
+    "key": {
+      "sensei:schema": "String",
+      "sensei:type": "sensei:scalar"
     },
-    "projectTitle": {
-      "description": "Name of the product",
-      "type": "string"
-    },
-    "translationConfig": {
-      "description": "The price of the product",
-      "type": "string"
-    },
-    "jobs": {
-      "type": "object",
-      "properties": {
-        "jobID": {
-          "type": "number"
-        },
-        "jobContent": {
-          "type": "string"
-        },
-        "height": {
-          "type": "number"
-        }
-      },
-      "required": [ "length", "width", "height" ]
+    "key2": {
+      "sensei:schema": "Number",
+      "sensei:type": "sensei:scalar",
+      "default": 0
     }
   },
-  "required": [ "projectID", "projectTitle", "translationConfig" ]
+  "sensei:inputs": {
+    "feature_out": {
+      "description": "project details",
+      "sensei:schema": "https://github.com/prassin/test/blob/master/project.json",
+      "sensei:type": "sensei:scalar",
+      "sensei:accepted_media_types": [
+        "application/json"
+      ]
+    }
+  },
+  "sensei:outputs": {
+    "autotags": {
+      "description": "Project details with jobs details",
+      "sensei:schema": "https://github.com/prassin/test/blob/master/project.json",
+      "sensei:type": "sensei:scalar",
+      "sensei:generated_media_types": [
+        "application/json"
+      ]
+    }
+  }
 }
