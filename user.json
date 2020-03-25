@@ -5,6 +5,9 @@
   "description": "A user schema",
   "type": "object",
   "properties": {
+  "user": {
+  "type": "object",
+  "properties": {
     "userID": {
       "description": "The unique identifier for a user",
       "type": "integer"
@@ -17,6 +20,6 @@
       "description": "Role of user",
       "type": "string"
     }
-  },
-  "required": [ "userID" ]
+  }}},
+  "required": [ "user" ]
 }
