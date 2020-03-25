@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://poc.com/engineDetails.schema.json",
+  "title": "engineDetails",
+  "description": "A engine details schema",
+  "type": "object",
+  "properties": {
+    "x-analyzer-id": {
+      "description": "The unique identifier for a engine",
+      "type": "string"
+    },
+    "x-request-id": {
+      "description": "Request ID",
+      "type": "string"
+    },
+    "x-api-key": {
+      "description": "API key",
+      "type": "string"
+    }
+  },
+  "required": [ "x-analyzer-id", "x-request-id", "x-api-key" ]
+}
