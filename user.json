@@ -1,25 +1,27 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "http://poc.com/user.schema.json",
-  "title": "user",
-  "description": "A user schema",
-  "type": "object",
-  "properties": {
-  "user": {
-  "type": "object",
-  "properties": {
-    "userID": {
-      "description": "The unique identifier for a user",
-      "type": "integer"
-    },
-    "userName": {
-      "description": "Name of user",
-      "type": "string"
-    },
-    "userRole": {
-      "description": "Role of user",
-      "type": "string"
-    }
-  }}},
-  "required": [ "user" ]
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "http://poc.com/user.schema.json",
+	"title": "user",
+	"description": "A user schema",
+	"type": "object",
+	"properties": {
+		"user": {
+			"type": "object",
+			"properties": {
+				"userID": {
+					"description": "The unique identifier for a user",
+					"type": "integer"
+				},
+				"userName": {
+					"description": "Name of user",
+					"type": "string"
+				},
+				"userRole": {
+					"description": "Role of user",
+					"type": "string"
+				}
+			}
+		}
+	},
+	"required": ["user"]
 }
