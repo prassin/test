@@ -24,7 +24,7 @@
           "description": "Job created flag",
           "type": "boolean"
         },
-        "complexParameter": {
+        "complexObject": {
           "type": "object",
           "properties": {
             "parameter1": {
