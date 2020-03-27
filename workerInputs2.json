@@ -15,25 +15,6 @@
         "parameter2": {
           "description": "Title of project",
           "type": "string"
-        },
-        "parameter3": {
-          "description": "Config path",
-          "type": "string"
-        },
-        "parameter4": {
-          "description": "Job created flag",
-          "type": "boolean"
-        },
-        "complexParameter": {
-          "type": "object",
-          "properties": {
-            "parameter1": {
-              "type": "number"
-            },
-            "parameter2": {
-              "type": "string"
-            }
-          }
         }
       }
     }
