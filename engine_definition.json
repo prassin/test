@@ -1,0 +1,31 @@
+{
+  "sensei:params": {},
+  "sensei:inputs": {
+    "workerInputs1": {
+      "description": "Worker Inputs",
+      "sensei:schema": "https://raw.githubusercontent.com/prassin/test/master/workerInputs1.json",
+      "sensei:type": "sensei:scalar",
+      "sensei:accepted_media_types": [
+        "application/json"
+      ]
+    },
+    "workerInputs2": {
+      "description": "Worker Inputs",
+      "sensei:schema": "https://raw.githubusercontent.com/prassin/test/master/workerInputs2.json",
+      "sensei:type": "sensei:scalar",
+      "sensei:accepted_media_types": [
+        "application/json"
+      ]
+    }
+  },
+  "sensei:outputs": {
+    "workerOutput": {
+      "description": "Worker Outputs",
+      "sensei:schema": "https://raw.githubusercontent.com/prassin/test/master/workerOutput.json",
+      "sensei:type": "sensei:scalar",
+      "sensei:generated_media_types": [
+        "application/json"
+      ]
+    }
+  }
+}
